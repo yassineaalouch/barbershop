@@ -1,0 +1,154 @@
+body {
+    height: 100%;
+}
+#about-section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.background-img {
+    background: url("./assets/about-image.jpeg") no-repeat center center;
+    position: absolute;
+    background-size: cover;
+    width: 60%; 
+    height: 100%;
+    top: 0;
+    right: 0; 
+    z-index: -1;
+}
+
+.about-card {
+    padding: 30px;
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 240px;
+    max-width: 450px;
+    background-color: #9a7b5f;
+    border-radius: 5px;
+}
+
+.about-title {
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding-right: 40px;
+}
+
+.about-description {
+    letter-spacing: 1.5px;
+    color: #e3dfdc;
+    margin-bottom: 35px;
+    padding-right: 30px;
+}
+
+.btn-about {
+    color: #362b27;
+    font-weight: bolder;
+    font-size: 1.2em;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+}
+
+.large-btn {
+    background: #fefeff;
+    padding: 10px 20px;
+    margin-right: 15px;
+}
+
+.secondary-btn {
+    border: 1px solid #fefeff;
+    background-color: #9a7b5f;
+    padding: 9px 19px;
+    color: #fefeff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}  
+
+@media (min-width: 1400px) {
+    .about-card {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 847px) {
+
+    .background-img {
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .about-card {
+        height: auto;
+        width: 50%;
+        margin-top: 20%!important;
+    }
+
+}
+
+@media (max-width: 715px) {
+    .secondary-btn {
+        display: none;
+    }
+    .about-card {
+        min-width: 300px;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-card {
+        margin-top: 30%!important;
+    }
+}
+
+@media (max-width: 510px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .about-card {
+        min-width: 240px;
+    }
+    .about-description {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 470px) {
+    .about-card {
+        margin-top: 40%!important;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .about-card {
+        padding: 20px;
+    }
+    .about-description {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .large-btn {
+        margin-bottom: 5px;
+    }
+}
+
+

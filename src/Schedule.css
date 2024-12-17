@@ -1,0 +1,160 @@
+#schedule-section {
+    color: white;
+    background-color: #362b27;
+    margin-top: 90px;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding: 0 100px 50px 100px;
+}
+
+.map > iframe{
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    border: 5px solid #9a7b5f;
+    border-radius: 7px;
+    width: 550px;
+    height: 490.93px;
+}
+
+.barber-schedule {
+    letter-spacing: 1.3px;
+    width: 320px;
+    background-color: #9a7b5f;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.schedules {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+.schedule-hours {
+    color: #e3dfdc;
+}
+
+.schedule-days > p, .schedule-hours > p {
+    margin: 12px 0;
+}
+
+.schedule-title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.phone-contact, .email-contact, .location-contact {
+    display: flex;
+}
+
+.phone-contact {
+    margin-top: 20px;
+}
+
+.phone-contact > p {
+    align-self: center;
+}
+
+.phone-icon, .email-icon, .location-icon {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.phone-contact > p, .email-contact > p, .location-contact > p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1145px) {
+    .schedule-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .schedule-container {
+        justify-content: center;
+        gap: 5%;
+        height: 25%;
+    }
+    .map {
+        width: 400px;
+    }
+    .barber-schedule {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px) {
+    .map {
+        width: 300px;
+    }
+}
+
+@media (max-width: 824px) {
+    #schedule-section {
+        margin-top: 40px;
+    }
+    .schedule-container {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        gap: 40px;
+        padding: 0;
+    }
+    
+    .barber-schedule {
+        width: calc(65% - 10px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .map {
+        width: calc(70% - 10px);
+        margin: auto;
+    }
+
+    .schedules {
+        gap: 15%;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .barber-schedule {
+        width: calc(65% - 15px);
+    }
+}
+
+@media (max-width: 450px) {
+    .barber-schedule {
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .map {
+        width: calc(80% + 25px);
+        margin: auto;
+    }
+
+    .schedules {
+        padding-left: 10px;
+    }
+    .email-icon, .phone-icon, .location-icon {
+        padding-left: 10px;
+    }
+}
+

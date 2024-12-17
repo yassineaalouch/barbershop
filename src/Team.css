@@ -1,0 +1,221 @@
+#team-section {
+    width: 100vw;
+    padding: 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.team-title {
+    color: #362b27;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.team-cards {
+    display: flex;
+    max-width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 35px;
+}
+
+.card {
+    position: relative;
+    width: 100%; 
+    max-width: 300px;  
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img-container {
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-barber {
+    width: 100%;
+    height: 300px;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    letter-spacing: 1.2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card:hover .img-barber {
+    transform: scale(1.1);
+}
+
+.card-overlay h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-overlay p {
+    margin: 10px 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.review-card {
+    background-color: white;
+    flex-shrink: 0; 
+    border-radius: 7px;
+    width: 350px; 
+    margin: 100px 50px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
+    will-change: transform; 
+}
+
+.reviews {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.reviews:before,
+.reviews:after {
+    position: absolute;
+    top: 25%;
+    width: 250px;
+    height: 80%;
+    content: "";
+    z-index: 2;
+}
+
+.reviews:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.reviews:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+.review-caroussel {
+    display: flex;
+    animation: 35s slide infinite linear;
+}
+
+@media (max-width: 1212px) and (min-width: 630px) {
+    .team-cards {
+        flex-direction: row;
+        width: 100%;
+    }
+    .card {
+        flex-basis: calc(100%); 
+        max-width: calc(100%);
+    }
+    .img-barber {
+        width: 50%;
+    }
+    .card-overlay {
+        color: black;
+        background-color: white;
+        opacity: 1;
+        width: 50%;
+        margin-left: 50%;
+    }
+    .card-overlay > p{
+        padding: 10px;
+    }
+    .img2 > .img-container > .card-overlay {
+        margin-left: 0;
+        margin-right: 50%;
+    }
+    .img2 > .img-container > .img-barber {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 730px) {
+    .team-cards {
+        flex-direction: column;
+    }
+    .team-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .review-caroussel {
+        animation: 45s slide infinite linear;
+    }
+    .reviews:before,
+    .reviews:after {
+        width: 100px;
+    }
+    .card-overlay {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .review-card {
+        width: 250px;
+        margin: 100px 20px 0;
+    }
+    .review-caroussel {
+        animation: 50s slide infinite linear;
+    }
+    .reviews:before,
+    .reviews:after {
+        width: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+

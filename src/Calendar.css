@@ -1,0 +1,89 @@
+.calendly-inline-widget {
+    min-width: 320px;
+    width: 600px;
+    border: 5px solid #9a7b5f;
+    height: 600px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.calendar-title {
+    margin-top: 90px;
+    text-align: center;
+}
+
+@media (max-width: 663px) {
+    .calendar-title {
+        font-size: 2rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+}
+
+.barbershop-img {
+    width: 360px;
+    height: 609.334px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 0;
+}
+
+@media (max-width: 1145px) {
+    .calendar-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .calendar-container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .calendar-container {
+        width: 88%;
+    }
+}
+
+@media (max-width: 850px) {
+    .calendar-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 824px) {
+    .calendar-container {
+        width: calc(70% - 2px);
+    }
+    .barbershop-img {
+        display: none;
+        width: 65%;
+    }
+    .calendly-inline-widget {
+        border-radius: 7px;
+    }
+}
+
+@media (max-width: 450px) {
+    .calendar-container {
+        width: calc(90% - 5px);
+        margin-left: auto;
+    }
+}

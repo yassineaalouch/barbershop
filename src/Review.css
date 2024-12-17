@@ -1,0 +1,42 @@
+.review-description {
+    letter-spacing: 1.1px;
+    padding: 0 18px;
+    height: 85px;
+}
+
+.review-description > * {
+    margin: 0;
+}
+
+.review-profile {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -10px;
+    margin-left: -4px;
+}
+
+.review-name {
+    align-self: center;
+    margin: -15px;
+}
+
+.stars-container {
+    padding: 18px 0 15px 18px;
+}
+
+.review-pfp{
+    transform: scale(0.5);
+}
+
+@media (max-width: 650px) {
+    .stars-container {
+        padding-bottom: 4px;
+    }
+    .review-description {
+        height: 100px;
+    }
+}
+
+
+
+

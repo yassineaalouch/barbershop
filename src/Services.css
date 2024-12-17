@@ -1,0 +1,149 @@
+#services-section {
+    background-image: url('./assets/background-img.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 150px;
+    overflow-x: hidden;
+}
+
+.services-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-container > * {
+    background-color: rgba(122, 100, 100, 0.5); 
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    width: calc(33.33% - 24px);
+    height: 100%;
+    margin: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    .services-container > * {
+        width: calc(50% - 24px); 
+    }
+    .services-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 826px) {
+    .services-container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .service-container > * {
+        height: 94px;
+    }
+}
+
+@media (max-width: 663px) {
+    .services-container > * {
+        width: calc(100% - 24px); 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #services-section {
+        padding-bottom: 75px;
+    }
+
+    #services-section > h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .grid-container {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-left: 2.5%;
+    }
+}
+
+@media (max-width: 333px) {
+    .price-card > h3 {
+        font-size: 1rem;
+    }
+}
+
+.service-card-title {
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    padding-top: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 0;
+}
+.service-card-price {
+    color: #e3dfdc;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #362b27;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+
+.images-container {
+    margin-top: -170px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-1 {
+    max-width: 25%;
+    height: 250px;
+    align-self: center;
+    border: 5px solid #9a7b5f;
+    border-radius: 7px;
+}
+.img-2 {
+    max-width: 35%;
+    height: 300px;
+    border: 5px solid #9a7b5f;
+    border-radius: 7px;
+}
+.img-3 {
+    max-width: 25%;
+    height: 250px;
+    align-self: center;
+    border: 5px solid #9a7b5f;
+    border-radius: 7px;
+}
